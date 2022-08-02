@@ -1,0 +1,94 @@
+:root{
+  --light-grey: #E5E8E8;
+  --grey: #BDC3C7;
+  --sm: 14px;
+  --md:16px;
+}
+
+body{
+  margin: 0;
+}
+
+.Change-page{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.cards-container{
+ display: grid;
+ grid-template-columns: repeat(auto-fill, 240px);
+ gap: 26px;
+ place-content: center;
+}
+
+.change-row{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.change{
+  display: flex;
+  align-items: center;
+}
+
+.button-change{
+  font-size: var(--sm);
+  color: black;
+  background-color: var(--grey);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  width: 80px;
+  height: 30px;
+}
+
+.row{
+  display: contents;
+}
+
+.character-card{
+  width: 240px;
+  background-color: var(--grey);
+  border-radius: 30px;
+}
+
+.character-img{
+  width: 240px;
+  height: 240px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.character-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.character-info figure{
+  margin: 0;
+}
+
+.character-info figure img{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+
+.character-info div p:nth-child(1){
+  font-weight: bold;
+  font-size: var(--sm);
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
